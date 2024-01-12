@@ -1,0 +1,91 @@
+vscode -> 텍스트에디터(IDE가 아님!)
+- 익스텐션을 사용해서 마치 IDE처럼 사용
+python -> PyCharm, 쥬피터노트북
+java - intelliJ
+C# - Visual Studio
+==========================
+I=interface=대상을 제어하는 방법(수단) 
+GUI <-> CLI      ...TUI(안씀)
+
+window OS interface
+GUI = "Windows Shell"
+CLI = CMD(명령프롬프트) "Power Shell"
+
+Linux OS의 interface
+GUI = GNOME
+CLI = "Bash" -> bash에서 git을 주로 사용합니다.
+Bash 쓰는 이유는 Tab 자동완성 때문
+
+API 키를 받아와서 사용하게 될 것
+: 클라이언트가 서버에게 데이터를 요청하는 수단
+쳇gpt 키
+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
+
+1/11(목)
+Markdown/CLI/Git
+
+Markdown 문서화 하기 위해 씀
+
+interface(=대상을 제어하는 수단, ex) TV 리모컨)
+방식
+CLI(Command-Line Interface)
+GUI(Graphical User Interface)
+
+Window OS CLI: Power Shell, cmd
+Linux OS CLI: Bash <- bash에서 git 사용을 주로 많이 씀
+
+Git을 다룰 때 interface
+GUI : Github Desktop(기능이 적음), 
+아틀라시안 제품인 '소스트리'는 최고
+CLI: git bash
+
+GUI 장점: 보기 편하고 친숙하고 기능 다 있고 
+Graph를 훨씬 보기 좋고 diff 파일 비교 -> 복잡한 분석 GUIㄱㄱ
+
+CLI 장점: commit, push 명령어 1초면 끝(but GUI는 오래걸림)
+20년 전 배운게 지금도 쓰고 있고 앞으로도 계속 쓸 예정
+
+결론 - 대부분 CLI를 쓰지만, diff나 graph는 GUI로
+ 
+ MINGW64
+: 윈도우에서 리눅스에서 쓰는 툴을 쓸 수 있게 가볍게 만든 PJT
+
+~ 리눅스는 항상 HOME 디렉토리
+cd~: 홈 디렉토리
+cd-: 뒤로가기
+cd..: 상위폴더
+
+vscode 단축기
+ctrl+`, ctrl+j : 터미널 열기
+ctrl+ w : 닫기
+ctrl + shift + f : 전체 찾기
+shift tab: 들여쓰기 취소
+shift + insert : 터미널에 붙여넣기
+ctrl + shift + c:복사
+push(=업로드)
+
+git = 분산 버전 관리 시스템
+
+
+수정하면 add부터 다시
+
+master? branch master로 설정되어 있다. : git의 기본 브랜치는 항상 master로 설정
+branch? 코드를 개발하거나 수정하는데 사용되는 작업공간
+
+HEAD ? 현재 작업 중인 커밋
+---------------------------------------------------
+1/12 
+Remote Repository/로컬&원격 저장소/gitignore/github 활용
+
+원격저장소: 코드와 버전 관리 이력을 온라인 상의 특정 위치에 저장하여 여러 개발자가 협업하고 코드를 공유할 수 있는 저장공간
+ex) GitLab, Github, Bitbucket
+
+1. git init -> add, commit -> remote -> push
+2. git init -> clone -> add, commit, push
+
+실습3
+1. clone
+git clone url
+
+2. pull
+git pull origin master
